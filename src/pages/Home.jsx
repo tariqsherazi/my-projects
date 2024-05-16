@@ -9,6 +9,8 @@ const Home = () => {
 <div style={{display:'flex',justifyContent:'space-between',flexWrap:'wrap'}}>
 
 <AddCard/>
+
+
     <AddCard/>
     <AddCard/>
     <AddCard/>
