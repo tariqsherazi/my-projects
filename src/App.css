@@ -1,0 +1,127 @@
+/* App.css */
+.logo-img {
+  height: 35px;
+   /* Add margin to the right side of the image */
+   margin-right: 5px;
+}
+
+/* Apply Flexbox to the Wrapper */
+.Wrapper {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  padding: 10px;
+}
+.nav-icon{
+
+  margin-top:20px;
+  margin-right: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-style: bold;
+}
+.wrapper{
+  padding-top: 20px;
+  font-style: bold;
+  
+}
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px; /* Adjust spacing between label and button */
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color:  #3ea6ff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px; /* Adjust as needed */
+  margin: 10px;
+
+}
+
+.thumbnail {
+  width: 200px; /* Adjust as needed */
+  height: 120px; /* Adjust as needed */
+  background-color: #f0f0f0; /* Placeholder color */
+}
+
+.details {
+  flex: 1;
+  padding: 10px;
+  
+  display: 'flex'; /* Display details horizontally */
+   /* Stack details vertically */
+  padding: '10px',
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.channel {
+  font-size: 12px;
+  color: #666;
+}
+
+.views {
+  font-size: 12px;
+  color: #666;
+}
+
+
+/* Apply Flexbox to adjust spacing */
+@media screen and (max-width: 768px) {
+  .Wrapper {
+    flex-direction: column; /* Change to column layout for smaller screens */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+
+  .logo-img {
+    margin-right: 15px; /* Remove margin for smaller screens */
+    
+}
+}
+/* App.css */
+.nav-icon {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Media query for screens with a max-width of 768px */
+@media (max-width: 768px) {
+  .nav-icon {
+    flex-direction: row; /* Display items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center items horizontally */
+  }
+  .wrapper {
+    width: 50%; /* Make each item take up half the width */
+  }
+}
